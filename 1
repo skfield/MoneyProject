@@ -1,0 +1,19 @@
+import time
+
+
+start = time.time()
+
+
+counter = 0
+
+
+for a in xrange(3):
+		for b in xrange(1+(200-100*a)/50):
+				for c in xrange(1+(200-100*a-50*b)/20):
+						for d in xrange(1+(200-100*a-50*b-20*c)/10):
+								for e in xrange(1+(200-100*a-50*b-20*c-10*d)/5):
+										for f in xrange(1+(200-100*a-50*b-20*c-10*d-5*e)/2):
+											counter += 1
+print counter+1
+end = time.time()
+print end - start
